@@ -9,7 +9,7 @@
     <h1>Variáveis e Constantes</h1>
     <hr>
     <h2>Declação e saida usando echo</h2>
-
+<hr>
     <?php
     //Variaveis
     $curso = "Programador Web";
@@ -22,7 +22,11 @@
 //Constantes
 define('AUTOR', 'Rafael'); // Tradicional,antiga
 const EMPRESA = "ABC Tecnologia"; // Nova, moderna
-echo "<p>".AUTOR." trabalha na empresa ".EMPRESA."</p>"
+echo "<p>".AUTOR." trabalha na empresa ".EMPRESA.".</p>"
 ?>
+<h2>Saída de dados simplificados/direta</h2>
+<hr>
+<p>Estamos no <?=$curso?> em <?=$ano?> .</p>
+<p> O <?=AUTOR?> trabalha na empresa <?=EMPRESA?> .</p>
 </body>
 </html>
