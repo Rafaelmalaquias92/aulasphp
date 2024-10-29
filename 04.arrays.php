@@ -49,6 +49,9 @@
     <h3>var_dump (nomeArray)</h3>
     <pre><?=var_dump($evento)?></pre>
 
+    <?php include "redes.sociais.html" ?>
+
     </div>
+
 </body>
 </html>

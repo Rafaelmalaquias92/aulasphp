@@ -1,3 +1,4 @@
+<?php include "recursos-externos.php"; ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -13,6 +14,11 @@
 <body>
     <h1>Revisando o básico</h1>
     <hr>
+    <ul>
+        <?php foreach($marcas as $marca) {?>
+        <li> <?=$marca?> </li>
+        <?php }?>
+    </ul>
     <?php 
     /* Criar duas Variavies e/ou Constant */
     const NOME = "Rafael Malaquias";
@@ -26,7 +32,7 @@
     ?>
     <h2>Olá! Meu nome é <i class="text-danger"><?=NOME?></i> e tenho <span class="bg-danger"><?=$idade?></span> anos.</h2>
 <p class="bg-rainbonw">
-    a pia ta cheia de louça
+    🐸 ATECUBANOS 🐸
 </p>
 </body>
 </html>
