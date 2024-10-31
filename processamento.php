@@ -13,14 +13,28 @@
     $email = $_POST["email"];
     $nascimento = $_POST["nascimento"];
     $mensagem = $_POST["mensagem"];
+
+    if ( empty($nome) || empty($email)){
     ?>
+    <p style="color: red;"> Você DEVE preencher <b>nome e <b>e-mail</b></b>!</p>
+    <?php
+    } else{
+        ?>
+
 
     <h2>Dados Recebidos</h2>
     <ul>
         <li>Nome: <?=$nome?></li>
         <li>Email: <?=$email?></li>
+        <?php if( !empty($nascimento)){ ?>
         <li>Nascimento: <?=$nascimento?></li>
+        <?php } ?>
+
+        <?php if( !empty($mensagem)){ ?>
+
         <li> Mensagem: <?= $mensagem?></li>
+        <?php } ?>
     </ul>
+    <?php } ?>
 </body>
 </html>
