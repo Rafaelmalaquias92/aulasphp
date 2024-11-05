@@ -38,3 +38,22 @@ const pagina = document.querySelector("body");
 const exemplo1 = document.querySelector("#exemplo1");
 const mensagem  = document.querySelector("#mensagem");
 
+// Ouvinte de Evento
+exemplo1.addEventListener("click", function(){
+   pagina.style.fontFamily = "Verdana";
+   mensagem.innerHTML = "<i>Fonte alterada com Sucesso!</i>"
+   titulo.setAttribute("hidden", true);
+});
+
+// Ouvinte de evento para teclado
+document.addEventListener("keypress", function(){
+    console.log("Se tira a mão de mim 🤬");
+});
+
+document.addEventListener("keypress", function(event){
+    if(event.code === "KeyR"){
+        pagina.style.fontFamily = "Times";
+        mensagem.innerHTML = "";
+        titulo.removeAttribute("hidden");
+    }
+});
